@@ -36,6 +36,8 @@ Jupyter Notebook 📖 – Running SQL queries and analysis.
 Database Schema (DDL - SQL Table Creation)
 Based on the ER diagram, below is the SQL schema definition:
 
+## 
+
 # sql
 CREATE TABLE orders (
     order_id SERIAL PRIMARY KEY,
@@ -171,24 +173,38 @@ plt.xlabel("Department")
 plt.ylabel("Number of Purchases")
 plt.title("Weekday vs Weekend Purchases by Department")
 plt.show()
-How to Run the Project
-1️⃣ Clone the repository
+
+
+## How to Run the Project
 
 # sh
 
-git clone https://github.com/yourusername/Ecommerce_Data_Analysis.git
+git clone https://github.com/AnishThakur22/Ecommerce_Data_Analysis.git
 cd Ecommerce_Data_Analysis
-2️⃣ Install dependencies
+Install dependencies
 
 # sh
 
 pip install pandas psycopg2 sqlalchemy jupyter matplotlib seaborn
-3️⃣ Start Jupyter Notebook and run the analysis
+Load the SQL schema into your PostgreSQL database
+
+Ensure your PostgreSQL server is running and accessible. Then, execute the SQL schema file to set up the database structure:
 
 # sh
 
-jupyter notebook
-4️⃣ Ensure PostgreSQL is running and update connection details in the notebook.
+psql -U your_username -d your_database -f e_commerce_data_analysis.sql
+Replace your_username and your_database with your PostgreSQL credentials.
+
+Start Jupyter Notebook and run the analysis
+
+# sh
+
+jupyter notebook ecom_data_analysis.ipynb
+This will open the Jupyter Notebook interface in your browser, allowing you to interact with the ecom_data_analysis.ipynb notebook.
+
+Update database connection details
+
+Before executing the notebook cells, ensure that the database connection parameters within the notebook match your PostgreSQL setup.
 
 Conclusion
 This project provides an end-to-end data analysis pipeline using Python and SQL, demonstrating how to clean, transform, and analyze large datasets to extract valuable business insights. 🚀
