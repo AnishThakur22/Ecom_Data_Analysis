@@ -21,8 +21,6 @@ Database Schema
 
 📷 ER Diagram:
 
-Make sure to include the ER diagram image in your repository and reference it below.
-
 # md
 ![ER Diagram](ER_Diagram.png)
 Tech Stack & Tools
