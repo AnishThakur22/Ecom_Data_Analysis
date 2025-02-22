@@ -177,7 +177,7 @@ plt.show()
 
 # sh
 
-git clone https://github.com/AnishThakur22/Ecommerce_Data_Analysis.git
+git clone https://github.com/AnishThakur22/Ecom_Data_Analysis/edit/main/README.md
 cd Ecommerce_Data_Analysis
 Install dependencies
 
